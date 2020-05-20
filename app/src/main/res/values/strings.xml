@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Certacure</string>
+
+<string name="patient">Patient</string>
+
+<string name="doctor">Doctor</string>
+    <string name="patientString">patient can view his visits\n
+and doctor comments, his\n
+laboratory results and more..</string>
+    <string name="doctorString">doctor can view his patients\n
+medical reports, manage his\n
+appointments and follow up\n
+with his patients and more..</string>
+    <string name="login">Login</string>
+    <string name="login_long">Our app doesnt’ provide registration\n system, patient should get his initial username\n and password from one of the hospitals, ensure that\n you have your identity with you</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="keep_me_logged_in">Keep me logged in</string>
+</resources>

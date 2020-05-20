@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ffff">
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+            <ImageButton
+                android:id="@+id/phone_icon"
+                android:layout_width="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="30dp"
+               android:src="@drawable/phonedrawbleldpi"
+                android:background="@drawable/circle"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                />
+            <ImageButton
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/question2ldpi"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:foregroundGravity="right"
+            android:background="@color/white"
+                android:layout_marginEnd="20dp"/>
+
+
+            </RelativeLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl"
+        android:layout_above="@+id/l1"
+
+        />
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:fontFamily="@font/belgrano"
+            android:id="@+id/tell"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="TELL US WHO\n YOU ARE!"
+            android:textAlignment="center"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l1"
+        android:layout_centerVertical="true"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:src="@mipmap/left"
+            android:layout_marginEnd="160dp"
+            />
+
+
+
+            <ImageButton
+                android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginStart="180dp"
+            android:src="@mipmap/right"
+            />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                >
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager2"
+                    android:textAlignment="center"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sliderDots"
+        android:layout_marginTop="30dp"
+        android:layout_above="@+id/img">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/sliderDots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l2"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal">
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="150dp"
+        android:background="@drawable/roundedbutton"
+        android:paddingEnd="15dp"
+        android:fontFamily="@font/belgrano"
+        android:text="Continue"
+        android:drawableEnd="@drawable/buttonrightldpi"
+
+        />
+
+
+</RelativeLayout>
