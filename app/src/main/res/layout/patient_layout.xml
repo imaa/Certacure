@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageButton
+            android:id="@+id/phone_icon"
+            android:layout_width="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="30dp"
+            android:src="@drawable/navigationldpi"
+            android:background="@color/white"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            />
+        <ImageButton
+            android:id="@+id/newmsg"
+            android:layout_toLeftOf="@+id/callbtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/newmessageldpi"
+            android:layout_alignParentTop="true"
+            android:foregroundGravity="right"
+            android:background="@color/white"
+            android:layout_marginEnd="15dp"/>
+        <ImageView
+            android:id="@+id/callbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phonedrawbleldpi"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="7dp"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/rl">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/visit_rv"
+
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="60dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/rl2"
+        android:layout_height="40dp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/rl"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"
+        >
+    <View
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_edges" />
+    <TextView
+        android:id="@+id/non_visible_filter"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:text="+30"
+        android:textAlignment="center"
+        android:gravity="center"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/rl3"
+        android:layout_below="@id/rl2"
+        android:layout_height="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="18dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tests"
+
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/rl3"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+>
+        <TextView
+            android:id="@+id/ervisit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:text="ER Visit"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/belgrano"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_below="@id/ervisit_text"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:clickable="true"
+            android:linksClickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:id="@+id/doctor_name"
+            android:textColor="@color/blue"
+            android:text="@string/doctor_text"
+            android:background="@drawable/label_bg"
+            android:focusable="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ervisit_text"
+            android:textSize="10sp"
+            android:text="Thu 13, May"
+            android:textAlignment="center"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="5dp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+
+            android:layout_alignParentEnd="true">
+        <ImageButton
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/filter_3"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/filter3mdpi"
+            android:background="@color/white"/>
+        <ImageButton
+            android:layout_toStartOf="@+id/filter_3"
+            android:id="@+id/filter_2"
+            android:layout_width="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="20dp"
+            android:src="@drawable/filter2mdpi"
+            android:background="@color/white"/>
+        <ImageButton
+            android:id="@+id/filter_1"
+            android:layout_toStartOf="@+id/filter_2"
+            android:layout_width="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="20dp"
+            android:src="@drawable/filter1mdpi"
+            android:background="@color/white"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/filter_1"
+                android:layout_height="wrap_content">
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:rotation="180"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/reminder" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Only Up-Normal"
+                    android:fontFamily="@font/belgrano"
+                    android:textAlignment="center"
+                    android:textSize="8sp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

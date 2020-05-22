@@ -6,5 +6,8 @@
     <color name="primary">#fde598</color>
     <color name="black">#000000</color>
     <color name="white">#ffff</color>
+    <color name="highlited">#faa795</color>
+    <color name="blue">#0000FF  </color>
+
 
 </resources>
